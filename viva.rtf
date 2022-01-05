@@ -1,0 +1,438 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2636
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Arial-BoldMT;\f1\froman\fcharset0 Times-Roman;\f2\fswiss\fcharset0 ArialMT;
+\f3\fmodern\fcharset0 CourierNewPSMT;\f4\fswiss\fcharset0 Helvetica;\f5\fnil\fcharset0 LucidaGrande;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red24\green25\blue27;\red255\green255\blue255;
+\red0\green0\blue233;\red29\green38\blue43;\red16\green16\blue18;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c12549\c12941\c14118;\cssrgb\c100000\c100000\c100000;
+\cssrgb\c0\c0\c93333;\cssrgb\c15294\c19608\c22353;\cssrgb\c7451\c7843\c9020;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid301\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid4}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 1. What is an activity?
+\f1\b0\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs32 \cf3 \cb4 \strokec3 An activity represents a single screen with a user interface just like a window or frame of Java. Android activity is the subclass of ContextThemeWrapper class. The Activity class defines the following call backs i.e. events.
+\f1\fs24 \cf0 \cb1 \strokec2 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf0 2. Define intent class
+\f1\b0\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs32 \cf3 \cb4 \strokec3 An intent is to perform an action on the screen. It is mostly used to start an activity, send a broadcast receiver,start services and send messages between two activities. There are two intents available in android as Implicit Intents and Explicit Intents.\'a0
+\f1\fs24 \cf0 \cb1 \strokec2 \
+
+\f2\fs32 \cf3 \cb4 \strokec3 t
+\f1\fs24 \cf0 \cb1 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf0 3. How to get the id of gui components?\'a0\'a0
+\f1\b0\fs24 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs29\fsmilli14667 \cf0 res.getResourceEntryName(view.getId())
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf0 	
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 4. Differentiate putextras and getstring extras.
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 	
+\fs32 \cf3 \cb4 \strokec3  Extras : 
+\f2\b0 a form of key- value pairs that give your intent additional information to \'a0 complete its action
+\f1\fs24 \cf0 \cb1 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs32 \cf3 \cb4 \strokec3 	
+\fs30\fsmilli15333 \cf0 \strokec2 putExtra(<name_of_extraData>, <data>) : adds extended data to the intent.
+\f1\fs24 \cb1 \
+\pard\pardeftab720\fi960\partightenfactor0
+
+\f2\fs30\fsmilli15333 \cf0 \cb4 getExtra() : fetches data which was added using putExtra() in the following way
+\f1\fs24 \cb1 \
+
+\f2\fs30\fsmilli15333 \cb4 	Bundle extras= getIntent().getExtras();
+\f1\fs24 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf0 5. How to display a message in an application?
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 	
+\f2\b0 Use 
+\f0\b TOAST
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 	
+\f2\b0 \cb4 A {\field{\*\fldinst{HYPERLINK "https://www.geeksforgeeks.org/toasts-android-studio/"}}{\fldrslt \cf5 Toast}} is a feedback message. It takes a very little space for displaying while overall activity is interactive and visible to the user. It disappears after a few seconds.
+\f1\fs24 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs29\fsmilli14667 \cf0 \cb4 	Syntax : 
+\f3\fs32 \cf6 \strokec6 Toast makeText (context,text,duration)
+\f1\fs24 \cf0 \cb1 \strokec2 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf0 6. How to change the background color of the text?
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 	
+\f2\b0 Use 
+\f0\b\fs32 \cf3 \cb4 \strokec3 android:background
+\f2\b0 ="@color/<color>"
+\f1\fs24 \cf0 \cb1 \strokec2 \
+
+\f0\b\fs29\fsmilli14667 7. What are the methods to change the properties of fonts?
+\f1\b0\fs24 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0
+\f2\fs29\fsmilli14667 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Obtain text by findViewById, then use setTextColor() method\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Or change manually in attribute list in XML file\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf0 8. What is setOnTouchListener?
+\f1\b0\fs24 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\f2\fs29\fsmilli14667 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 This is Called when a touch event is dispatched to a view. This allows listeners to get a chance to respond before the target view\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 setOnTouchListener(this); means that you want to assign a listener for your Button \'93on this instance\'94 ; this instance represents OnTouchListener and for this reason your class has to implement that interface.\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf0 9. What is meant by inflater?
+\f1\b0\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs29\fsmilli14667 \cf0 "Inflating" a view means taking the layout XML and parsing it to create the view and viewgroup objects from the elements and their attributes specified within, and then adding the hierarchy of those views and view-groups to the parent ViewGroup. When you call setContentView(), it attaches the views it creates from reading the XML to the activity. You can also use LayoutInflater to add views to another ViewGroup, which can be a useful tool in a lot of circumstances.
+\f1\fs24 \
+
+\f2\fs29\fsmilli14667 Inflater keyword is used in the java class of the corresponding layout(xml) file. This keyword is used in the onCreate() function of the class.
+\f1\fs24 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf0 10. What is the difference between onclick and ontouch?
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 Ans:
+\f1\b0\fs24 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls3\ilvl0
+\f2\fs29\fsmilli14667 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \'a0A "Touch" event is when someone puts their finger on the screen. It gets called throughout the movement of the finger, down, drag, and up. More fine-tuned control than OnClickListener. It performs and action on a press/ release on the screen It allows user with combination of move,down-touch,up-touch,finger drag or any movement gesture on the screen\
+\ls3\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 A "Click" need not even come from the screen. It could be someone pressing the enter key. Used for a basic purpose, when we just need a click from a user i.e., click of a button, no drag or gestures on the screen.\'a0\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs24 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf0 11. Define layout?
+\f1\b0\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs32 \cf3 \cb4 \strokec3 A layout defines the structure for a user interface in your app, such as in an activity. All\'a0 \'a0 elements in the layout are built using a hierarchy of View and ViewGroup objects. A View usually draws something the user can see and interact with
+\f1\fs24 \cf0 \cb1 \strokec2 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf0 12. Which is the default layout in applications?
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 	
+\f2\b0 Default Layout : 
+\f0\b ConstraintLayout
+\f1\b0\fs24 \
+\
+
+\f0\b\fs29\fsmilli14667 13. What is linear layout?
+\f1\b0\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs32 \cf3 \cb4 \strokec3 LinearLayout is a view group that aligns all children in a single direction, vertically or horizontally. You can specify the layout direction with the android:orientation attribute.
+\f1\fs24 \cf0 \cb1 \strokec2 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf0 14. Differentiate grid layout from table layout?
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 Ans:
+\f1\b0\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs29\fsmilli14667 \cf0 While grid and table layout are similar in that they both arrange data in cells (in a grid and table), grid layout does not require an explicit ScrollView for scrolling, while table layout does.
+\f1\fs24 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf0 15. List a few properties of layout.
+\f1\b0\fs24 \
+\
+
+\f0\b\fs29\fsmilli14667 16. What are event listeners?
+\f1\b0\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs32 \cf3 \cb4 \strokec3 An event listener is an interface in the View class that contains a single callback method. These methods will be called by the Android framework when the View to which the listener has been registered is triggered by user interaction with the item in the UI.
+\f1\fs24 \cf0 \cb1 \strokec2 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf0 17. What is action_up and action_down.
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 18. What are different mouse events?.
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 19. What is a motion event?
+\f1\b0\fs24 \
+\
+
+\f0\b\fs29\fsmilli14667 20. What is a view?
+\f1\b0\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs29\fsmilli14667 \cf0 View is a basic building block of UI (User Interface) in android. A view is a small rectangular box that responds to user inputs. Eg: EditText, Button, CheckBox, etc.
+\f0\b \'a0
+\f1\b0\fs24 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf0 21. Difference between wrap_content and match_parent.
+\f1\b0\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs29\fsmilli14667 \cf0 When layout width and height are set as match_parent, it will occupy the complete area that the parent view has, and if wrap_content is used, the space is big enough for its contents to get enclosed.
+\f1\fs24 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf0 22. What is the usage of the String.valueof() function.
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 23. How to get the values entered in the textbox?
+\f1\b0\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs29\fsmilli14667 \cf0 Using getText()\'a0
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf0 \'a0\'a0\'a0\'a0\'a0
+\f2\b0 EditText txtname = findViewById(R.id.name);
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs29\fsmilli14667 \cf0 \'a0\'a0\'a0\'a0\'a0String name\'a0 \'a0 \'a0 =\'a0 txtname.
+\f0\b getText()
+\f2\b0 .toString();
+\f1\fs24 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf0 24. What is an emulator?
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 25. What is SDK?
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 26. Define Paint .
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 	
+\f2\b0 The Paint class holds the style and color information about how to draw geometries, text\'a0 \'a0 \'a0 \'a0 \'a0 and bitmaps.
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs29\fsmilli14667 \cf0 	
+\f4\fs32 \cf3 \strokec3 public class Paint extends Object
+\f1\fs24 \cf0 \strokec2 \
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalt \clshdrawnil \clwWidth12440\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalt \clshdrawnil \clwWidth12440\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f4\fs32 \cf3 \strokec3 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 java.lang.Object
+\f1\fs24 \cf0 \strokec2 \cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth420\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth11980\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f4\fs32 \cf3 \strokec3  \'a0 
+\f5 \uc0\u8627 
+\f1\fs24 \cf0 \strokec2 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f4\fs32 \cf3 \strokec3  \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \'a0 android.graphics.Paint
+\f1\fs24 \cf0 \strokec2 \cell \lastrow\row
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf0 27. What is canvas?
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 	
+\f2\b0 Canvas is a class in Android that performs 2D drawing of different objects onto the screen. It is basically an empty space to draw onto. The coordinate system of the Android canvas starts in the top left corner. Canvas draw commands will draw over previously drawn items. The last draw command will be the topmost item drawn onto your canvas.
+\f1\fs24 \
+
+\f0\b\fs29\fsmilli14667 28. What is antialiasing?
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 29. How to draw an oval shape?
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 30. What are the parameters for drawcircle function?
+\f1\b0\fs24 \
+\pard\pardeftab720\fi960\partightenfactor0
+
+\f2\fs29\fsmilli14667 \cf0 X, Y, radius, paint
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf0 31. What is SQLite?
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 	
+\f2\b0 SQLite is a software library that provides a relational database management system. The lite in SQLite means lightweight in terms of setup, database administration, and required resources. lSQLite has the following noticeable features: self-contained, serverless, zero-configuration, transactional.SQLite does NOT require a server to run.
+\f1\fs24 \
+
+\f0\b\fs29\fsmilli14667 32. What is the DBHelper class?
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 	
+\f2\b0 public class DBHelper extends java.lang.Object. SmartStore Database Helper Singleton class that provides helpful methods for accessing the database underneath the SmartStore It also caches a number of of things to speed things up (e.g. soup table name, index specs, insert helpers etc)
+\f1\fs24 \
+
+\f0\b\fs29\fsmilli14667 33. What is the usage of cursor?
+\f1\b0\fs24 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f2\fs29\fsmilli14667 \cf0 A Cursor represents the result of a query and basically points to one row of the query result. This way Android can buffer the query results efficiently; as it does not have to load all data into memory.
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf0 34. How to assign a primary key?
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 	
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 35. Give the syntax for create query
+\f1\b0\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs29\fsmilli14667 \cf0 CREATE TABLE groups (group_id INTEGER PRIMARY KEY, name TEXT NOT NULL);
+\f1\fs24 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf0 36. What is multithreading?
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 	
+\f2\b0 In Java, Multithreading refers to a process of executing two or more threads simultaneously for maximum utilization of the CPU. A thread in Java is a lightweight process requiring fewer resources to create and shares the process resources.
+\f1\fs24 \
+
+\f0\b\fs29\fsmilli14667 37. What are the main uses of Handler class?
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 38. What is the postDelayed function?
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 39. Define Runnable class.
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 40. Difference between explicit and implicit intent.
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 	{\field{\*\fldinst{HYPERLINK "https://www.geeksforgeeks.org/android-implicit-and-explicit-intents-with-examples/"}}{\fldrslt 
+\f2\b0 \cf7 \cb4 \strokec7 Implicit Intent}}
+\f2\b0 \cf7 \cb4 \strokec7  doesn\'92t specify the component. In such a case, intent provides information on available components provided by the system that is to be invoked. {\field{\*\fldinst{HYPERLINK "https://www.geeksforgeeks.org/android-implicit-and-explicit-intents-with-examples/"}}{\fldrslt Explicit Intent}} specifies the component. In such a case, intent provides the external class to be invoked.
+\f1\fs24 \cf0 \cb1 \strokec2 \
+
+\f0\b\fs29\fsmilli14667 41. How to enable GPS in the application.
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 	
+\f2\b0 Add uses-permission tag to the Android Manifest file and request for permission during runtime in the onCreate method.\'a0
+\f1\fs24 \
+
+\f0\b\fs29\fsmilli14667 42. What is the location manager class?
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 43. What are the methods inside location manager class
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 44. What is AlertDialog class?
+\f1\b0\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs29\fsmilli14667 \cf0 Subclass of the Dialog class that can display one, two or three buttons. Can display a string in the dialogue box by using setMessage() method or use custom Frame Layout to display a more complex view.
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf0 45. How to enable Network providers?
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 46. What are the access permissions to write data to sdcard?
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 47. What is FileInputStream and FileOutputStream?
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 48. What is a BufferedReader?
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 49. What is OutputStreamWriter ?.
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 50. How to get the path of sdcard?
+\f1\b0\fs24 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls4\ilvl0
+\f2\fs29\fsmilli14667 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	1	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 System.getenv(\'93EXTERNAL_STORAGE\'94) or System.getenv(\'93EXTERNAL_SDCARD_STORAGE\'94)\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf0 51. What is a media player class?
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 52. What is PendingIntent?
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 53. How to set time ?
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 54. How to set a ringtone?
+\f1\b0\fs24 \
+
+\f0\b\fs29\fsmilli14667 55. What is windowmanager?
+\f1\b0\fs24 \
+\
+}
